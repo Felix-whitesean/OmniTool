@@ -1,0 +1,79 @@
+*{
+  font-family: "Manrope", serif;
+  box-sizing: border-box;
+}
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  --black: #111111b9;
+  --grey: #c0c0c0;
+  --light-grey: #ededed;
+  --white: #ffffff;
+  --green: #278d46;
+  --light-green: #00bf12;
+  background: url('../src/assets/Website\ design.png');
+  background-size: 99vw 99vh;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--light-green);
+}
+
+body {
+  margin: 0 1rem;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  padding: 0;
+  min-height: 100vh;
+}
+.main-content{
+  height: 75vh;
+  /* background: black; */
+  width: calc(100vw - 300px - 3.4rem);
+  position: absolute;
+  top: 9.5rem;
+  right: .8rem;
+  margin-left: 1.8rem;
+  opacity: .9;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-top: 1px solid var(--black);
+}
+
+
+button:focus,
+button:focus-visible {
+  background: var(--grey);
+  outline: 1px solid var(--black);
+  border: 1px solid var(--white);
+}
+textarea:focus{
+  border: 1px solid var(--white);
+  outline: 1px solid var(--black);
+}
+
+@media only screen and (max-width: 878px){
+
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  .main-content{
+    width: 100%;
+  }
+}

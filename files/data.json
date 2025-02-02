@@ -1,0 +1,64 @@
+{
+    "project":{
+        "project_id":"",
+        "title":"",
+        "no_of_subtitles":"",
+        "date_created":"",
+        "last_modified":"",
+        "storage_status":"",
+        "project_status":"",
+        "storage":"",
+        "author":"user_id"
+    },
+    "section": {
+        "section_id":"",
+        "subtitle_id":"",
+        "paragraph_id":""
+    },
+    "paragraph": {
+        "paragraph_id":"",
+        "paragraph_label":"",
+        "paragraph_content":"",
+        "styled_components_index":""
+    },
+    "styled_components": {
+        "component_id":"",
+        "start_index":"",
+        "end_index":"",
+        "style_id":""
+    },
+    "styling": {
+        "styling_id":"",
+        "styling_name":"",
+        "styling_status":"",
+        "styling_identifier":""
+    },
+    "progress": {
+        "progress_id":"",
+        "last_changed":"",
+        "last_commit":"",
+        "previous_document_edited":"",
+        "end_index":""
+    },
+    "github account": {
+        "github_account_id":"",
+        "github_account_username":"",
+        "github_security_token":"",
+        "github_repo_name":""
+    },
+    "user": {
+        "user_id":"",
+        "user_name":"",
+        "signed_up_date":"",
+        "password":"",
+        "last_login":"",
+        "last_project":"",
+        "render": ""
+    },
+    "downloads":{
+        "user_id":"",
+        "download_status":"",
+        "downloaded_at":"",
+        "download_format":""
+    }
+}

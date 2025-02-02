@@ -1,0 +1,135 @@
+.chats{
+    background: var(--light-grey);
+}
+.pg{
+    width: 90%;
+    background-color: var(--white);
+    height: 90%;
+    border: 1px solid var(--black);
+    margin: 2rem auto;
+    display: flex;
+}
+.pg .main{
+    flex: 1;
+}
+.pg .history{
+    flex: 0 0 200px;
+    border: 1px solid var(--grey);
+}
+.toolbar{
+    background: var(--black);
+    padding: .5rem;
+}
+.toolbar .tools{
+    display: flex;
+    gap: 1rem;
+    user-select: none;
+}
+.toolbar .tools span{
+    opacity: 1;
+    background: var(--white);
+    padding: .2rem .6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    align-self: center;
+    user-select: none;
+}
+.toolbar .tools span:last-child{
+    padding: .2rem .4rem;
+}
+.toolbar .tools span:hover{
+    user-select: none;
+    cursor: pointer;
+    background: var(--grey);
+}
+.inputarea{
+    height: 80%;
+}
+.project-details{
+    height: 100%;
+}
+.project-details .action{
+    padding: .4rem .8rem;
+    display: flex;
+    border-bottom: 1px solid var(--black);
+    gap: 1rem;
+}
+.project-details .action .title{
+    width: 70%;
+    display: flex;
+    gap: 1rem;
+}
+.project-details .action .title input{
+    line-height: 2.5em;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+}
+.project-details .action .actionbtns{
+    display: flex;
+    gap: 1rem;
+}
+.project-details .action .actionbtns .download{
+    background: var(--green);
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 0 1rem;
+}
+.project-details .action .actionbtns .download:hover{
+    background: var(--light-green);
+ }
+.project-details .action .actionbtns .download-btn{
+    font-size: 2.5em;
+}
+.project-details .action .actionbtns .refresh{
+    padding: 0 0.7rem;
+}
+.project-details .action .actionbtns .refresh-btn{
+    font-size: 1.8em;
+}
+.project-details textarea{
+    resize: none;
+    width: 95%;
+    margin: 1rem;
+    align-self: center;
+    min-height: 90%;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid red;
+    /* overflow-y: hidden; */
+}
+.history .title{
+    opacity: 1;
+    background: var(--green);
+    font-size: 1.2em;
+    color: var(--white);
+    line-height: 2em;
+    text-align: center;
+    font-style: italic;
+}
+.history .history-list{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+}
+.history .history-list li{
+    list-style: none;
+    padding: .1rem;
+}
+.history .history-list li:first-child{
+    background: var(--light-grey);
+}
+hr{
+    color: var(--black);
+    background: var(--grey);
+    width: 100%;
+}
+/* .history .history-list li:nth-child(2){
+    background: var(--grey);
+} */

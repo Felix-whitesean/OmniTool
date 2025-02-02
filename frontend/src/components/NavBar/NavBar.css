@@ -1,0 +1,205 @@
+.navbar{
+    height: fit-content;
+    background: var(--light-grey);
+    /* background: black; */
+    width: calc(100vw - 300px - 3.4rem);
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+    margin-left: 1.8rem;
+    opacity: .9;
+    border: 1px solid var(--black);
+    border-bottom: 0;
+}
+.navbar .properties{
+    position: relative;
+    width: 100%;
+}
+.navbar .top-strip{
+    background: var(--black);
+    padding: 0;
+}
+.navbar .top-strip .flex-end{
+    display: flex;
+    width: fit-content;
+    padding: 0 1rem;
+    margin: 0;
+    margin-left: 80%;
+    transform: translateX(-100%);
+}
+.navbar .top-strip .flex-end p{
+    padding: 0;
+    margin: 0;
+}
+.navbar .top-strip .flex-end .status{
+    display: flex;
+    gap: 1rem;
+    transition: 1s;
+    padding: 0 1rem;
+    background: #c0c0c025;
+}
+.navbar .top-strip .flex-end .status:hover{
+    background: #c0c0c095;
+}
+.navbar .top-strip .flex-end .status div{
+    background: var(--light-green);
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--light-green);
+    border-radius: 50%;
+    align-self: center;
+    opacity: 1;
+}
+.navbar .top-strip .flex-end .status h5{
+    color: var(--white);
+    font-style: italic;
+    letter-spacing: .2em;
+    opacity: 1;
+    margin: .7rem;
+}
+.navbar .bottom-strip{
+    background: var(--grey);
+    width: 100%;
+    height: 30px;
+    opacity: 1;
+    border-bottom: 5px solid var(--white);
+}
+.middle-strip{
+    width: 70%;
+    height: 100%;
+    background: var(--white);
+    margin-left: 15%;
+    /* transform: skewX(45deg); */
+    position: relative;
+    opacity: 1;
+}
+.middle-strip::after{
+    width: 50px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: .2px;
+    background: var(--light-grey);
+    transform: skewX(-25deg);
+}
+.middle-strip::before{
+    width: 50px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: .2px;
+    background: var(--light-grey);
+    transform: skewX(25deg);
+}
+.name{
+    height: fit-content;
+}
+.name h1{
+    width: fit-content;
+    background: var(--white);
+    margin: auto;
+    margin-top: -.1rem;
+    padding: 0 1rem;
+    position: relative;
+    line-break: none;
+    text-shadow: 1px 1px 1px var(--grey);
+    border-bottom: 1px solid var(--black);
+}
+.name h1::before, .name h1::after{
+    width: 3rem;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    background: var(--white);
+    z-index: -1;
+    border-bottom: 1px solid var(--black);
+    
+}
+.name h1::before{
+    left: -25px;
+    transform: skewX(25deg);
+    border-left: 1px solid var(--black);
+    
+}
+.name h1::after{
+    right: -25px;
+    transform: skewX(-25deg);
+    border-right: 1px solid var(--black);
+}
+.floating{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-33%) rotate(90deg) scale(.25);
+}
+.hexagon {
+    position: relative;
+    margin: 100px auto;
+    margin-top: -100px;
+    width: 190px;
+    height: 110px;
+    background: var(--white);
+    background-position: center center;
+    z-index: 1;
+    /* Text styling */
+    line-height: 110px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #fff;
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+    transition: color 500ms ease, text-shadow 500ms ease;
+    /* transform: rotateX(60deg); */
+}
+  .hexagon:hover {
+    color: #fff;
+    text-shadow: 0 0 10px white;
+}
+  
+.hexagon .face1,
+.hexagon .face2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: inherit;
+    z-index: -1;
+  /*   border: 1px solid red; */
+    /* Keeps borders smooth in webkit */
+    backface-visibility: hidden;
+}
+.hexagon .face1:before,
+.hexagon .face2:before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: inherit;
+}
+.hexagon .face1 { transform: rotate(60deg); }
+.hexagon .face1:before {
+    left: 0;
+    transform-origin: left top;
+    transform: rotate(-60deg) translate(-110px, 0);
+    border: 1px solid red;
+}
+  
+.hexagon .face2 { transform: rotate(-60deg); }
+.hexagon .face2:before {
+    right: 0;
+    transform-origin: right top;
+    transform: rotate(60deg) translate(110px, 0);
+}
+@media only screen and (max-width: 878px){
+    .navbar{
+        width: 100%;
+    }
+}
